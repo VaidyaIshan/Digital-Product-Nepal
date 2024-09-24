@@ -1,0 +1,157 @@
+     body {
+            background-color: #2dbd7a;
+            margin: 0px;
+            font-family: 'Bahnschrift', Arial, sans-serif;
+        }
+
+        .side-content {
+            color: #242425;
+        }
+
+        .main-title {
+            margin-top: 150px;
+            font-size: 105px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            overflow: hidden; /* Ensures the content is not shown outside its bounds */
+            white-space: nowrap; /* Keeps text on a single line */
+            border-right: .15em solid orange; /* The typewriter cursor */
+            animation: typing 2s steps(30,end), blink-caret .65s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+
+        .main-title, .main-title2 {
+            margin-left: 5%;
+        }
+
+        .main-title2 {
+            font-size: 45px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 64% 35%;
+            gap: 20px;
+        }
+
+        .main-grid {
+            background-color: #2dbd7a;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+        }
+
+        .main-grid:hover {
+            transform: scale(1.02) translateX(-5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .box-grid {
+            background-color: rgb(236, 233, 231);
+            padding: 20px;
+            border: solid rgb(131, 131, 131) 2px;
+            box-shadow: rgb(224, 221, 221) 5px 5px 6px 2px;
+            transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+        }
+
+        .box-grid:hover {
+            transform: scale(1.02) translateX(5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #333;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .description {
+             color: #242425;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 35px 0;
+            padding: 20px;
+            background-color:#2dbd7a ;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+            text-align: justify;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange; }
+        }
+
+        .explore-btn {
+             color: #242425;
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #2dbd7a;
+            
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+            margin-top:70px;
+            text-align: center;
+        }
+
+        .explore-btn:hover {
+            background-color: #45a049;
+        }

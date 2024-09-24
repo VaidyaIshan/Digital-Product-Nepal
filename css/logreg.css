@@ -1,0 +1,304 @@
+body{
+    margin: 0px;   font-family: bahnschrift ;
+}
+
+.Main-box
+{
+display: flex;
+justify-content: end;
+
+}
+
+.logo{
+width: 200px;
+margin-left: 185px;
+margin-top: -50px;
+}
+
+.side-content
+{
+background-color: #2dbd7a;
+width: 87%;
+padding: 20px;
+color: #242425;
+}
+
+.main-title1{
+margin-top:150px;
+font-size: 105px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-title1,.main-title2
+{
+margin-left: 5%;
+}
+
+.main-title2{
+font-size: 65px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.box
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+width: 40%;
+height:100vh;
+border: solid rgb(131, 131, 131) 2px;
+background-color: rgb(236, 233, 231);
+box-shadow: rgb(224, 221, 221) 5px 5px 6px 2px;
+}
+
+#Submit-btn{
+padding: 10px;
+color: white;
+background-color: #2dbd7a;
+/*background-color:#807dc8   ;*/
+font-size: large;
+border-radius: 10px;
+width: 80%;
+transition: all .5s ease-in-out; 
+}
+
+.New-register{ 
+font-size: 18px;
+
+}
+
+#Submit-btn:hover{
+background-color:#2aa16a;
+transform: scale(1.01); 
+}
+
+.form-inp{
+border-radius: 10px;
+width: 70%;
+padding: 20px;
+border: none;
+font-size: 1rem;
+}
+
+a{
+color: #2dbd7a;
+}
+/* Responsive Styles for Tablets and iPads */
+@media (max-width: 1024px) {
+    .Main-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .side-content {
+      width: 90%;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .main-title1 {
+      font-size: 85px;
+      margin-top: 100px;
+    }
+  
+    .main-title2 {
+      font-size: 55px;
+      margin-top: 60px;
+    }
+  
+    .box {
+      width: 80%;
+      height: auto;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  
+    .form-inp {
+      width: 85%;
+    }
+  
+    #Submit-btn {
+      width: 85%;
+    }
+  }
+  
+  /* Responsive Styles for Mobile Phones */
+  @media (max-width: 768px) {
+    .Main-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .side-content {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .main-title1 {
+      font-size: 75px;
+      margin-top: 50px;
+    }
+  
+    .main-title2 {
+      font-size: 45px;
+      margin-top: 50px;
+    }
+  
+    .box {
+      width: 90%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .form-inp {
+      width: 90%;
+    }
+  
+    #Submit-btn {
+      width: 90%;
+    }
+  }
+  /* Header */
+  .header {
+    width: 100%;
+    background-color: #333;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #2B2D42;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  .social-icon, .nav-icon {
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover, .nav-icon:hover {
+    color: #555;
+  }
+  
+  .hamburger {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2B2D42;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #555;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Responsive Styles for Small Mobile Phones */
+  @media (max-width: 480px) {
+    .main-title1 {
+      font-size: 50px;
+    }
+  
+    .main-title2 {
+      font-size: 30px;
+    }
+  
+    .box {
+      padding: 10px;
+    }
+  
+    .form-inp {
+      padding: 10px;
+    }
+  
+    #Submit-btn {
+      font-size: medium;
+    }
+  
+    .New-register {
+      font-size: 16px;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+  
+  .nav-links.active {
+      display: flex;
+  }
+  
+  .navbar a {
+      padding: 10px 0;
+      width: 100%;
+      text-align: left;
+  }
+  
+  .hamburger {
+      display: block;
+  }
+  }
+  
